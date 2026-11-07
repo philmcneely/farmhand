@@ -86,3 +86,6 @@ export const rtcConfig = {
 export const relayUrls = import.meta.env?.VITE_TRACKER_URL
   ? [import.meta.env?.VITE_TRACKER_URL]
   : undefined
+
+// This fork is single-player only: online play would call the upstream API and public WebRTC trackers.
+export const ONLINE_PLAY_ENABLED = false

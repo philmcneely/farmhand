@@ -101,13 +101,13 @@ const Home = ({
             children: `
 Hi, you're playing **Farmhand**! This is an open source game project created by [Jeremy Kahn](https://github.com/jeremyckahn). The project has evolved over time and is now developed with the support of [a community of contributors](https://github.com/jeremyckahn/farmhand/blob/develop/CONTRIBUTORS.md).
 
-[![Source code](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/jeremyckahn/farmhand) [![Discord](https://img.shields.io/discord/714539345050075176?label=farmhand+discord)](https://discord.gg/6cHEZ9H) [![r/FarmhandGame](https://img.shields.io/reddit/subreddit-subscribers/FarmhandGame?style=social)](https://www.reddit.com/r/FarmhandGame/) [![@FarmhandGame](https://img.shields.io/badge/@farmhandgame-E4405F?style=flat-square&logo=Instagram&logoColor=white)](https://www.instagram.com/farmhandgame/)
+[Source code](https://github.com/jeremyckahn/farmhand) | [Discord](https://discord.gg/6cHEZ9H) | [r/FarmhandGame](https://www.reddit.com/r/FarmhandGame/) | [Instagram](https://www.instagram.com/farmhandgame/)
 
 Farmhand is a resource management game that puts a farm in your hand. It is designed to be both desktop and mobile-friendly and fun for 30 seconds or 30 minutes at a time. Can you build a thriving farming business? Give it a try and find out!
 
 This project has been in development since 2018. **Farmhand will always remain completely free to play**. The game is continually being developed and new features are released as soon as they are ready. All are welcomed to participate in the game's development, so [join the Discord channel](https://discord.gg/6cHEZ9H) and say hi if you'd like to get involved!
 
-Farmhand is developed in a fully transparent way. As much of its development and operation is as publicly accessible as possible, including [API deployment logs](https://farmhand.vercel.app/_logs), [build job logs](https://github.com/jeremyckahn/farmhand/actions), and [deployed static assets](https://github.com/jeremyckahn/farmhand/tree/gh-pages). Your privacy is important, so none of your personal information is collected or transmitted aside from basic Google Analytics data tracking. You're welcome to audit the code, logs, and network requests to verify it for yourself. Farmhand's code is licensed under [GNU GPL v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), and all game art is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+Farmhand is developed in a fully transparent way. As much of its development and operation is as publicly accessible as possible, including [API deployment logs](https://farmhand.vercel.app/_logs), [build job logs](https://github.com/jeremyckahn/farmhand/actions), and [deployed static assets](https://github.com/jeremyckahn/farmhand/tree/gh-pages). This copy is a private, single-player build: no analytics, no online play, and nothing is sent anywhere (your game is saved in this browser only). You're welcome to audit the code, logs, and network requests to verify it for yourself. Farmhand's code is licensed under [GNU GPL v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), and all game art is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
 
 Happy farming! 🐮
     `,
@@ -187,32 +187,6 @@ The Farmhand game you're playing now is still under active development, so don't
 ### Official merchandise
 
 You can support Farmhand's ongoing development by purchasing [official merchandise](https://www.zazzle.com/store/farmhandgame/products)! This also spreads awareness of the game and makes every day a little brighter.
-    `,
-          }}
-        />
-      </CardContent>
-    </Card>
-    <Divider />
-    <Card>
-      <CardContent>
-        <Markdown
-          {...{
-            children: `
-### Online multiplayer
-
-You can play Farmhand online with others! Online play is totally free and anonymous.
-
-To play online, flip the "Play online" toggle in the menu. You'll be connected to the **global** room by default, but you can select another room to play in if you'd like. If you select a room that doesn't exist, it will automatically be created for you. You can then tell others to meet you in that room.
-
-Online play works just like offline play, except that the fluctuating market values are shared among everyone playing in the room with you. Additionally, market values are affected by your choices when you end a farm day:
-
-* Buying seeds or harvesting crops raises their respective values
-
-* Selling items (seeds or harvested crops) or harvesting seeds lowers their respective values
-
-You'll see a notification explaining how you affected the market when you end the farm day. Because room market values are shared, **your buy/sell/harvest decisions affect others** when they join the room or end their farm day. Time your actions right to take advantage of market trends and gain the competitive edge over other online farmers!
-
-As an added bonus for playing online, **you'll get free money** a few times every minute while connected to a room. The more people that are connected, the more you'll get. Invite your friends to the room and to increase the bonus for everyone!
     `,
           }}
         />

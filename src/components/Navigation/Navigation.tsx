@@ -373,18 +373,7 @@ export const Navigation = ({
       </p>
       <FarmNameDisplay {...{ farmName, handleFarmNameUpdate }} />
       <DayAndProgressContainer />
-      <OnlineControls
-        {...{
-          activePlayers,
-          handleActivePlayerButtonClick,
-          handleChatRoomOpenStateChange,
-          handleOnlineToggleChange,
-          handleRoomChange,
-          isChatAvailable,
-          isOnline,
-          room,
-        }}
-      />
+      {/* Online play removed in this fork: it needs the upstream Vercel API and public WebRTC trackers. */}
 
       <Select
         variant="standard"

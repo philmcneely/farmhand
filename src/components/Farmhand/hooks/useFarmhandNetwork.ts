@@ -3,7 +3,12 @@ import window from 'global/window.js'
 import throttle from 'lodash.throttle'
 import { useCallback, useEffect } from 'react'
 
-import { endpoints, relayUrls, rtcConfig } from '../../../config.js'
+import {
+  ONLINE_PLAY_ENABLED,
+  endpoints,
+  relayUrls,
+  rtcConfig,
+} from '../../../config.js'
 import {
   COW_TRADE_TIMEOUT,
   HEARTBEAT_INTERVAL_PERIOD,
@@ -164,7 +169,8 @@ export const useFarmhandNetwork = (
     const { isOnline, priceCrashes, priceSurges, room, playerId, peerRoom } =
       instanceProxyRef.current.state
 
-    if (!isOnline) return
+    // Online play is disabled in this fork (no upstream API, no public trackers).
+    if (!isOnline || !ONLINE_PLAY_ENABLED) return
 
     boundReducersRef.current.showNotification(CONNECTING_TO_SERVER, 'info')
 
